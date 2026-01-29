@@ -18,20 +18,23 @@ Unlike standard tools that blindly generate keys, this hunter leverages ECC Poin
   1. ⚡ Math-Level Acceleration (数学级加速)
 
 The Old Way: Standard tools calculate Public = Private * G for every key. This is slow (Scalar Multiplication).
+
 The Hunter Way: We use Public_New = Public_Old + Stride_Point. Adding points on the elliptic curve is 3x-5x faster than multiplying.
 
   3. 🧠 Smart Strategy Modes (智能策略模式)
 
 Random Mode (High Entropy): Uses a Random Base + Random Stride strategy. Every thread picks a random spot, then sprints forward using a random stride. This ensures maximum coverage and unpredictability.
+
 Range Mode (Exhaustive): Uses a Sequential Stride (+1) strategy to exhaustively search every single key in a specific range (e.g., for puzzle solving).
     
-  5. 🖥️ Hardware Awareness (硬件感知)
+  3. 🖥️ Hardware Awareness (硬件感知)
 
 Physical Core Detection: Automatically detects Physical Cores vs. Logical Threads. It prevents Hyper-Threading (SMT) from diluting the ALU (Arithmetic Logic Unit) power, ensuring each core runs at 100% efficiency.
     
-  6. 🛡️ Security & Efficiency (安全与效率)
+  4. 🛡️ Security & Efficiency (安全与效率)
 
 Bloom Filters: Handles millions of target addresses with $O(1)$ lookup time and minimal memory.
+
 Entropy Reseeding: Automatically refreshes the random number generator from the OS entropy pool every 60 seconds.
 
 ## 🚀 Usage
