@@ -10,8 +10,7 @@ Unlike standard tools that blindly generate keys, this hunter leverages ECC Poin
 
 ## Performance
 
-<img src="image/rust1.png" alt="" width="400">
-<img src="image/rust2.png" alt="" width="400">
+<img src="image/rust3.png" alt="" width="400">
 
 ## 🌟 Key Features
 
