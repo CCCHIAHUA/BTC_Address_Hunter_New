@@ -1,3 +1,5 @@
+(This version is deprecated. Please move to [BTC_Address_Hunter_Old](https://github.com/CCCHIAHUA/BTC_Address_Hunter_Old "BTC_Address_Hunter_Old").)
+
 # BTC_Address_Hunter_New
 
 (Note: Please try to run it on Linux/Unix.)
